@@ -1,1 +1,1 @@
-# MicrosoftGraphJavaScriptClientLibrary
+# Microsoft Graph JavaScript Client Library

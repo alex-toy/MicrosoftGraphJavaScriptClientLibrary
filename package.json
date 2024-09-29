@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@azure/identity": "^4.4.1",
+    "@azure/msal-browser": "^3.24.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "isomorphic-fetch": "^3.0.0"
+  },
+  "name": "microsoftgraphjavascriptclientlibrary",
+  "description": "```\r npm install @microsoft/microsoft-graph-client\r ```",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-toy/MicrosoftGraphJavaScriptClientLibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-toy/MicrosoftGraphJavaScriptClientLibrary/issues"
+  },
+  "homepage": "https://github.com/alex-toy/MicrosoftGraphJavaScriptClientLibrary#readme"
+}

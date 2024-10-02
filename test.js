@@ -5,10 +5,10 @@ import { Client } from "@microsoft/microsoft-graph-client";
 import { TokenCredentialAuthenticationProvider } from "@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials/index.js";
 
 // formateur graphtest
-const clientId = "ff254521-9e5f-4bbe-9283-28807ab29403";
-const tenantId = "8d8fe6ea-bda0-4000-8b58-84e845919d65";
+const clientId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+const tenantId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 const clientSecret = "";
-const userId = "f247cab8-ba8a-4b23-aa43-aec6beef4077";
+const userId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 await sendEmail();
 // await createOnlineMeeting();
@@ -30,12 +30,12 @@ async function createOnlineMeeting(){
         subject: 'Backlog Refinement',
         participants: {
             organizer: {
-                upn: "formateur@sparks-formation.com",
+                upn: "test@sparks.com",
                 role: "presenter"
             },
             attendees: [
                 {
-                    upn: "alessio.rea@apollossc.com",
+                    upn: "alessio.rea@test.com",
                     role: "attendee"
                 }
             ]

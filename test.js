@@ -58,6 +58,10 @@ async function createEvent(){
             dateTime: "2024-09-25T12:10:07.149Z",
             timeZone: "UTC"
         },
+        body : {
+            contentType : "html",
+            content : "<h1>join url</h1>"
+        },
         attendees: [
             {
                 emailAddress: {

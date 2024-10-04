@@ -114,3 +114,20 @@ async function sendEmail() {
         console.error('Error sending email', error)
     }
 }
+
+function _getClientDevice(){
+    const credential = new DeviceCodeCredential({
+        tenantId: tenantId,
+        clientId: clientId,
+        userPromptCallback: (info) => {
+            console.log(info.message);
+        },
+    });
+    
+    const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+        // scopes: ['User.Read'],
+        scopes: ['https://graph.microsoft.com/.default'],
+    });
+    
+    return Client.initWithMiddleware({ authProvider: authProvider });
+}

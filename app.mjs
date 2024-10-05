@@ -1,5 +1,5 @@
 import express from "express";
-import { sendEmail } from './sendMail.js';
+import { sendEmail, createOnlineMeeting } from './graphHelper.js';
 
 const PORT = 8080;
 
@@ -16,6 +16,12 @@ app.get('/', (req, res) => {
 app.post('/create-event', (req, res) => {
   const payload = req.body;
   sendEmail(payload);
+  res.status(200).send(payload);
+});
+
+app.post('/create-online-meeting', (req, res) => {
+  const payload = req.body;
+  createOnlineMeeting(payload);
   res.status(200).send(payload);
 });
 

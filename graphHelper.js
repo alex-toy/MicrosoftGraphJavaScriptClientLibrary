@@ -22,8 +22,10 @@ export async function sendEmail(message) {
 export async function createOnlineMeeting(onlineMeeting){
     const client = await _getClient();
     const userId = process.env.USER_ID;
+
+    console.log(onlineMeeting)
   
-    await client.api(`/users/${userId}/onlineMeetings`).post(onlineMeeting);
+    // await client.api(`/users/${userId}/onlineMeetings`).post(onlineMeeting);
 }
 
 async function _getClient() {

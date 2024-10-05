@@ -1,11 +1,17 @@
 # Microsoft Graph JavaScript Client Library
 
+## Node Server
+
+- create project
 ```
-npm i isomorphic-fetch
-npm install @microsoft/microsoft-graph-client
-npm install @azure/msal-browser
-npm install @azure/identity
+npm init
+npm i express
 ```
+
+
+
+
+## Secret Management
 
 - create a .env file
 
@@ -24,6 +30,15 @@ npm install dotenv
 import dotenv from 'dotenv';
 dotenv.config();
 const userId = process.env.USER_ID;
+```
+
+## Add Packages
+
+```
+npm i isomorphic-fetch
+npm install @microsoft/microsoft-graph-client
+npm install @azure/msal-browser
+npm install @azure/identity
 ```
 
 

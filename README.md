@@ -8,7 +8,15 @@ npm init
 npm i express
 ```
 
+- create docker image
+```
+docker build -t graphapi_i:v1 .
+```
 
+- create container
+```
+docker run --name graphapi_c -p 8080:8080 graphapi_i:v1
+```
 
 
 ## Secret Management

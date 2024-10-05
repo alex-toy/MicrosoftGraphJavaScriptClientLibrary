@@ -1,6 +1,8 @@
 import express from "express";
 import { sendEmail } from './sendMail.js';
 
+const PORT = 8080;
+
 const app = express();
 
 app.use(express.json());
@@ -16,7 +18,5 @@ app.post('/create-event', (req, res) => {
   sendEmail(payload);
   res.status(200).send(payload);
 });
-
-const PORT = 80;
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));

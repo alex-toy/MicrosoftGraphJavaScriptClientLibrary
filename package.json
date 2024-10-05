@@ -5,6 +5,8 @@
   "description": "- create a .env file",
   "main": "app.js",
   "dependencies": {
+    "@azure/identity": "^4.4.1",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
     "agent-base": "^7.1.1",
     "buffer-equal-constant-time": "^1.0.1",
     "debug": "^4.3.7",

@@ -15,7 +15,7 @@ docker build -t graphapi_i:v1 .
 
 - create container
 ```
-docker run --name graphapi_c -p 8080:8080 graphapi_i:v1
+docker run --name graphapi_c -p 8080:8080 -v ${pwd}:/app -v /node_modules graphapi_i:v1
 ```
 
 

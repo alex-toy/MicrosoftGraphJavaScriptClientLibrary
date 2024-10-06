@@ -44,7 +44,11 @@
     "whatwg-fetch": "^3.6.20",
     "whatwg-url": "^5.0.0"
   },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
+    "start": "nodemon --legacy-watch app.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
